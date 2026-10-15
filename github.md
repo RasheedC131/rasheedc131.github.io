@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "GitHub"
+title: GitHub
+permalink: /github/
+redirect_to: https://github.com
 ---
 
-<meta http-equiv="refresh" content="0; url=https://github.com/RasheedC131" />
+
