@@ -1,6 +1,6 @@
 title: Rasheed Chenet | Portfolio
 email: ra357094@ucf.edu
 description: Undergraduate Game Systems Programmer specializing in data-driven architectures.
-theme: minima
+remote_theme: jekyll/minima@v3
 minima:
   skin: dark
