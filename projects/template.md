@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Project Title: Subtitle Highlighting Core Focus"
-categories: projects
+nav_exclude: true
 ---
 
 ## Overview
