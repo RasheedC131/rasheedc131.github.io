@@ -2,7 +2,7 @@
 layout: page
 title: GitHub
 permalink: /github/
-redirect_to: https://github.com
+redirect_to: https://github.com/RasheedC131
 ---
 
 
