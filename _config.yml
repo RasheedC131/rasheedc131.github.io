@@ -3,4 +3,4 @@ email: ra357094@ucf.edu
 description: Undergraduate Game Systems Programmer specializing in data-driven architectures.
 theme: minima
 minima:
-  skin: solarized
+  skin: dark
