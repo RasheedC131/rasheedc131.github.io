@@ -79,4 +79,70 @@ func get_weight_balanced_letter() -> String:
 
 ---
 
+## Dynamic Target Priority
+Allies of the same letter can help each other out if they outnumber the enemy, and pivot when a new threat enters the game. To implement this I utilized bool flags: The enemy tracks a flag for whether it's being targeted, and the allies track a flag for whether they are currently helping. 
+
+### Allies follow these steps to find their target
+* When an ally is spawned it searches through all enemies to find a match
+* If there is no match, they leave
+* If there is a match that isn't being targeted, it chases
+* If there is a match that is already targeted, it helps attack
+
+```gdscript
+func find_target():
+	#Get all enemies in scene
+	var enemies : Array[Enemy] = []
+	enemies.assign(get_tree().get_nodes_in_group("enemy"))
+	
+	#Find Enemy with matching letter
+	var occupied_target: Enemy = null
+	if not enemies.is_empty():
+		for i in enemies:
+			if i.is_queued_for_deletion():
+				continue
+			if i.letter == target_letter: #Match Found
+				if i.is_targeted:
+					if not is_instance_valid(occupied_target): #Implemented so they help most recent
+						occupied_target = i
+				else:
+					lock_target(i)
+					break
+	
+	#Didnt find a solo match
+	if not is_instance_valid(nav_agent.target):
+		#Revert to helping
+		if is_instance_valid(occupied_target):
+			lock_target(occupied_target)
+		else: #No enemies of the letter at all
+			await get_tree().create_timer(1).timeout
+			queue_free()
+
+func lock_target(enemy: Enemy) -> void:
+	curr_speed = speed
+	active_target = enemy
+	nav_agent.target = active_target
+	
+	active_target.defeated.connect(_on_target_defeated)
+	
+	#Update Flags
+	if not enemy.is_targeted:
+		enemy.is_targeted = true
+		enemy.rival = self
+	else:
+		is_helping = true
+```
+When a new enemy is added to the scene, helping allies will shift priority.
+```gdscript
+func _on_node_added_to_game(new_node: Node) -> void:
+	if not is_helping or new_node is not Enemy:
+		return
+	
+	if new_node.letter == target_letter:
+		print("Found Own")
+		is_helping = false
+		lock_target(new_node)
+```
+
+---
+
 [back](../)
