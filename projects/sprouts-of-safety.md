@@ -4,3 +4,5 @@ title: Sprouts of Safety
 ---
 
 # Hi!
+
+[back](./)
