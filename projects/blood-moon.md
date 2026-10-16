@@ -5,4 +5,4 @@ title: Blood Moon
 
 # Hi!
 
-[back](./)
+[back](../)
