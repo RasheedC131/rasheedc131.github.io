@@ -6,7 +6,7 @@ I am a Junior at the University of Central Florida who strives to make entertain
 
 # Projects
 
-[Sprouts of Safety](/projects/sprouts-of-safety.md) <br>
+### [Sprouts of Safety](/projects/sprouts-of-safety.md) <br>
 `Godot, GDScript, GitHub` <br>
 Knight Hacks IX
 
