@@ -19,18 +19,18 @@ This project was made for Knight Hacks IX, a 36 hour hackathon. Our team tackled
 ---
 
 ## Pathfinding and Navmesh
-Godot allows you to bake a tileset into a navmesh with it's NavigationRegion2D node. I built out the map using 2 layers: The floor as a Navigation Layer, and the walls as a physics layer.
+Godot allows you to bake a tileset into a navmesh with its NavigationRegion2D node. I built out the map using 2 layers: The floor as a Navigation Layer, and the walls as a physics layer.
 
 ![Tilemap Navmesh that was under the illustration](../assets/sprouts/navmesh.png)
 
-Using this agents with a NavigationAgent2D node can path find with the algorithm of your choice. I went with A* as we only needed the quickest path to the target.
+Using this, agents with a NavigationAgent2D node can path find with the algorithm of your choice. I went with A* as we only needed the quickest path to the target.
 
-![Tilemap Navmesh that was under the illustration](../assets/sprouts/pathfind.png)
+![Agent Pathfinding Showcase](../assets/sprouts/pathfind.png)
 
 ---
 
 ## Balanced Enemy Spawning
-Enemies in this game are broken into tier based on the length of their letter code. The shorter being weak but fast, and the long being strong but slow.
+Enemies in this game are broken into tiers based on the length of their letter code. Shorter codes represent weak but fast enemies, while longer codes represent strong but slow ones.
 ```gdscript
 const LETTER_TIERS = {
 	1: ["E", "T"],
@@ -39,11 +39,11 @@ const LETTER_TIERS = {
 	4: ["B", "C", "F", "H", "J", "L", "P", "Q", "V", "X", "Y", "Z"]
 }
 ```
-Due to the way morse code is built, the ratio to weak to strong letters is vastly unbalanced. If you spawned by choosing completely random there is a 46% chance of getting the strongest enemy type, and only an 8% of getting the weakest. To remedy this, I implemented a weighted algorithm. 
+Due to the way morse code is built, the ratio of weak to strong letters is vastly unbalanced. If you spawned by choosing completely random, there is a 46% chance of getting the strongest enemy type, and only 8% of getting the weakest. To remedy this, I implemented a weighted algorithm. 
 * Each tier is assigned a weight, higher numbers being more common.
 * The weights are summed, a random number is picked from 0 to the random value.
 * You loop around the tiers checking if the random value is lower than the current weight.
-* If not the value gets subtracted by the weight and you move onto the next.
+* If not, the value is subtracted by the current tier weight, and the loop moves to the next index.
 * The loop is completed once the value finds a weight higher than it.
   
 ```gdscript
