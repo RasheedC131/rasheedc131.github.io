@@ -5,4 +5,4 @@ title: Photo Freak
 
 # Hi!
 
-[back](../)
+[back](./)
