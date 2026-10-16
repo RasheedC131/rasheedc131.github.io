@@ -10,6 +10,5 @@ I am a Junior at the University of Central Florida who strives to make entertain
 `Godot, GDScript, GitHub` <br>
 Knight Hacks IX
 
-<a href= "/projects/sprouts-of-safety.md" >
-    <img src= "https://placehold.co/300x150" alt="Sprouts of Safety Thumbnail"">
-</a>
+![Sprouts of Safety](https://placehold.co/300x150)
+
