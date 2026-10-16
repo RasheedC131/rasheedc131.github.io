@@ -45,6 +45,7 @@ Due to the way morse code is built, the ratio to weak to strong letters is vastl
 * You loop around the tiers checking if the random value is lower than the current weight.
 * If not the value gets subtracted by the weight and you move onto the next.
 * The loop is completed once the value finds a weight higher than it.
+  
 ```gdscript
 const TIER_WEIGHTS = {
   1: 17,
