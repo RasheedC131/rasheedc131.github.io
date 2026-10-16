@@ -7,7 +7,7 @@ title: Sprouts of Safety
 
 `Godot, GDScript, GitHub`
 
-[GitHub](https://github.com/RasheedC131/MorseCodeDefense) | [Devpost](https://devpost.com/software/morse-code-defense)
+[GitHub](https://github.com/RasheedC131/MorseCodeDefense) - [Devpost](https://devpost.com/software/morse-code-defense)
 
 ---
 
