@@ -102,7 +102,8 @@ func find_target():
 				continue
 			if i.letter == target_letter: #Match Found
 				if i.is_targeted:
-					if not is_instance_valid(occupied_target): #Implemented so they help most recent
+					#Implemented so they help most recent
+					if not is_instance_valid(occupied_target):
 						occupied_target = i
 				else:
 					lock_target(i)
