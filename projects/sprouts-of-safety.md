@@ -48,7 +48,7 @@ Due to the way morse code is built, the ratio to weak to strong letters is vastl
   
 ```gdscript
 const TIER_WEIGHTS = {
-  1: 17,
+	1: 17,
 	2: 55,
 	3: 25,
 	4: 3
