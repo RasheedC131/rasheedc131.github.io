@@ -41,7 +41,7 @@ const LETTER_TIERS = {
 ```
 Due to the way morse code is built, the ratio of weak to strong letters is vastly unbalanced. If you spawned by choosing completely random, there is a 46% chance of getting the strongest enemy type, and only 8% of getting the weakest. To remedy this, I implemented a weighted algorithm. 
 * Each tier is assigned a weight, higher numbers being more common.
-* The weights are summed, a random number is picked from 0 to the random value.
+* The weights are summed, a random number is picked from 0 to the total weight.
 * You loop around the tiers checking if the random value is lower than the current weight.
 * If not, the value is subtracted by the current tier weight, and the loop moves to the next index.
 * The loop is completed once the value finds a weight higher than it.
