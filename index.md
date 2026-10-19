@@ -16,17 +16,17 @@ Knight Hacks IX
 `Unreal, Blueprints, GitHub` <br>
 Limbitless x UCF x UU Game Jam
 
-![Pharaoh's Forces](https://placehold.co/300x150)
+![Pharaoh's Forces](/assets/pharaoh/thumbnail.png)
 
 **[Photo Freak](/projects/photo-freak.md)** <br>
 `Unity, C#, GitHub` <br>
 Project for AI for Game Programming UCF course
 
-![Photo Freak](https://placehold.co/300x150)
+![Photo Freak](/assets/photo/thumbnail.png)
 
 **[Blood Moon](/projects/blood-moon.md)** <br>
 `Godot, GDScript, GitHub` <br>
 Knight Hacks VIII
 
-![Blood Moon](https://placehold.co/300x150)
+![Blood Moon](/assets/blood/thumbnail.png)
 
