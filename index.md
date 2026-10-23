@@ -10,7 +10,7 @@ I am a Junior at the University of Central Florida who strives to make entertain
 `Godot, GDScript, GitHub` <br>
 Knight Hacks IX
 
-![Sprouts of Safety](/assets/sprouts/thumbnail.png)
+![Sprouts of Safety](/assets/sprouts/demo.gif)
 
 **[Pharaoh's Forces](/projects/pharaohs-forces.md)** <br>
 `Unreal, Blueprints, GitHub` <br>
