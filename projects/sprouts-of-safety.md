@@ -16,6 +16,10 @@ Sprouts of Safety is an educational game that teaches you Morse code using your 
 
 This project was made for Knight Hacks IX, a 36 hour hackathon. Our team tackled the challenge presented by Full Sail, to make a serious game or training simulation using face detection and/or pathfinding, we chose both. I took the charge on pathfinding and agent behavior, as well as assisting our teammates who were new to game development.
 
+![Demo preview for sprouts of safety](../assets/sprouts/demo.gif)
+
+*See full demo [here](https://devpost.com/software/morse-code-defense)*
+
 ---
 
 ## Pathfinding and Navmesh
