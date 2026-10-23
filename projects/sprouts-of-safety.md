@@ -21,11 +21,11 @@ This project was made for Knight Hacks IX, a 36 hour hackathon. Our team tackled
 ## Pathfinding and Navmesh
 Godot allows you to bake a tileset into a navmesh with its NavigationRegion2D node. I built out the map using 2 layers: The floor as a Navigation Layer, and the walls as a physics layer.
 
-![Tilemap Navmesh that was under the illustration](../assets/sprouts/navmesh.png)
+![Image of Tilemap Navmesh that was under the illustration](../assets/sprouts/navmesh.png)
 
 Using this, agents with a NavigationAgent2D node can path find with the algorithm of your choice. I went with A* as we only needed the quickest path to the target.
 
-![Agent Pathfinding Showcase](../assets/sprouts/pathfind.png)
+![Gif of Agent Pathfinding](../assets/sprouts/pathfind.gif)
 
 ---
 
@@ -143,6 +143,8 @@ func _on_node_added_to_game(new_node: Node) -> void:
 		is_helping = false
 		lock_target(new_node)
 ```
+
+![Gif of allies switching targets](../assets/sprouts/target.gif)
 
 ---
 
