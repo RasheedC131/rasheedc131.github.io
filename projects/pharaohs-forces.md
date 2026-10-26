@@ -22,6 +22,4 @@ This was my first ever project for Unreal
 
 ---
 
-## Technical Breakdown Under Development
-
 [back](../)
