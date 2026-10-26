@@ -16,11 +16,8 @@ Photo Freak is a photography horror game made to apply the design patterns, algo
 
 This project was made for UCF's AI for Game Programming course. We had a semester to make a game, meeting typical production deadlines along the way. For this project I developed the photo system, taking massive inspiration from Pokémon snap for the scoring logic.
 
+![Photo Freak](/assets/photo/thumbnail.png)
+
 ---
-
-## Technical Breakdown Under Development
-
-
-
 
 [back](../)
