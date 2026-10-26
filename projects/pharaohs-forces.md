@@ -18,6 +18,8 @@ This project was made for the Limbitless x UCF x UU game jam, an event where tea
 
 This was my first ever project for Unreal
 
+![Demo preview for pharaoh's forces](../assets/pharaoh/demo.gif)
+
 ---
 
 ## Technical Breakdown Under Development
