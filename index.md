@@ -10,13 +10,13 @@ I am a Junior at the University of Central Florida who strives to make entertain
 `Godot, GDScript, GitHub` <br>
 Knight Hacks IX
 
-![Sprouts of Safety](/assets/sprouts/demo.gif)
+![Sprouts of Safety Demo Gif](/assets/sprouts/demo.gif)
 
 **[Pharaoh's Forces](/projects/pharaohs-forces.md)** <br>
 `Unreal, Blueprints, GitHub` <br>
 Limbitless x UCF x UU Game Jam
 
-![Pharaoh's Forces](/assets/pharaoh/thumbnail.png)
+![Pharaoh's Forces Demo Gif](/assets/pharaoh/demo.gif)
 
 **[Photo Freak](/projects/photo-freak.md)** <br>
 `Unity, C#, GitHub` <br>
